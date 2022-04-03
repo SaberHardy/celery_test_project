@@ -27,3 +27,7 @@ wrapt==1.14.0
 
 #for run celery server use:
 #celery -A celery_dimo.celery worker -l info
+
+#for using celery beat:
+# 1 - pip install django-celery-results
+# 2- celery -A celery_dimo.celery beat -l info

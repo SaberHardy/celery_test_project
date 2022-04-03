@@ -119,4 +119,4 @@ CELERY_TIMEZONE = 'Europe/Moscow'
 CELERY_RESULT_BACKEND = 'django-db'
 
 # Celery beat
-# CELERY_BEAT_SCHEDULAR = 'django_celery_beat.schedulers:DatabaseScheduler'
+CELERY_BEAT_SCHEDULAR = 'django_celery_beat.schedulers:DatabaseScheduler'
