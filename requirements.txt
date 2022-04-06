@@ -11,11 +11,16 @@ click-repl==0.2.0
 decouple==0.0.7
 Deprecated==1.2.13
 Django==4.0.3
+django-celery-beat==2.2.1
 django-celery-results==2.3.0
+django-timezone-field==4.2.3
 kombu==5.2.4
 packaging==21.3
 prompt-toolkit==3.0.28
+psycopg2-binary==2.9.3
 pyparsing==3.0.7
+python-crontab==2.6.0
+python-dateutil==2.8.2
 pytz==2022.1
 redis==4.2.1
 six==1.16.0
@@ -23,11 +28,3 @@ sqlparse==0.4.2
 vine==5.0.0
 wcwidth==0.2.5
 wrapt==1.14.0
-
-
-#for run celery server use:
-#celery -A celery_dimo.celery worker -l info
-
-#for using celery beat:
-# 1 - pip install django-celery-results
-# 2- celery -A celery_dimo.celery beat -l info

@@ -24,6 +24,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'celery_app.apps.CeleryAppConfig',
+    'send_email.apps.SendEmailConfig',
 
     'django_celery_results',
     'django_celery_beat',
@@ -120,3 +121,11 @@ CELERY_RESULT_BACKEND = 'django-db'
 
 # Celery beat
 CELERY_BEAT_SCHEDULAR = 'django_celery_beat.schedulers:DatabaseScheduler'
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_HOST_USER = 'justdjangotest@gmail.com'
+EMAIL_HOST_PASSWORD = 'mbdqoqzqwhharxfh'
+DEFAULT_FROM_EMAIL = 'Celery <justdjangotest@gmail.com>'
